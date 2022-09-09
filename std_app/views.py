@@ -23,10 +23,10 @@ def add_std(request):
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
         roll_no = int(request.POST['roll_no'])
-        year = int(request.POST['year'])
-        phone = int(request.POST['phone'])
         dept = int(request.POST['dept'])
         sec = int(request.POST['sec'])
+        year = int(request.POST['year'])
+        phone = int(request.POST['phone'])
         new_std = Student(first_name= first_name, last_name=last_name, roll_no=roll_no, year=year, phone=phone, dept_id = dept, sec_id = sec, add_date = datetime.now())
         new_std.save()
         return HttpResponse('Student added Successfully')

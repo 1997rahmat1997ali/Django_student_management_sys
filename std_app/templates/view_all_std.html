@@ -29,19 +29,19 @@
       <th scope="col">Add_date</th>
     </tr>
   </thead>
-         {% for emp in emps %}
+         {% for std in stds %}
   <tbody>
     <tr>
       <th scope="row">{{emp.id}}</th>
-      <td>{{emp.first_name}}</td>
-      <td>{{emp.last_name}}</td>
-      <td>{{emp.roll_no}}</td>
-      <td>{{emp.year}}</td>
-      <td>{{emp.phone}}</td>
-      <td>{{emp.sec.name}}</td>
-      <td>{{emp.dept.name}}</td>
-      <td>{{emp.dept.location}}</td>
-      <td>{{emp.add_date}}</td>
+      <td>{{std.first_name}}</td>
+      <td>{{std.last_name}}</td>
+      <td>{{std.roll_no}}</td>
+      <td>{{std.year}}</td>
+      <td>{{std.phone}}</td>
+      <td>{{std.sec.name}}</td>
+      <td>{{std.dept.name}}</td>
+      <td>{{std.dept.location}}</td>
+      <td>{{std.add_date}}</td>
     </tr>
   </tbody>
          {% endfor %}
